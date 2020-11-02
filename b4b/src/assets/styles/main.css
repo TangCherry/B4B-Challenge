@@ -1,0 +1,14 @@
+.main {
+  background-color: #a0a0a0;
+}
+
+.logo {
+  max-width: 100%;
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+.about-us {
+  text-align: center;
+}
