@@ -1,0 +1,18 @@
+.search-input{
+    margin-top: 6%;
+    text-align: center;
+}
+
+.ant-input-search .ant-input-group .ant-input-affix-wrapper:not(:last-child), .ant-input-group > .ant-input-affix-wrapper:not(:last-child) .ant-input {
+    background-color: #99AAB5;
+}
+
+.ant-input-search > .ant-input-group > .ant-input-group-addon .ant-input-search-button {
+    background-color: antiquewhite;
+    color: black;
+}
+
+.ant-btn-primary {
+    border-color: white;
+}
+
