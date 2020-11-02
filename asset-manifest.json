@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/B4B-Challenge/static/css/main.ab7136cd.chunk.css",
-    "main.js": "/B4B-Challenge/static/js/main.8bdd6604.chunk.js",
-    "main.js.map": "/B4B-Challenge/static/js/main.8bdd6604.chunk.js.map",
-    "runtime-main.js": "/B4B-Challenge/static/js/runtime-main.455dca95.js",
-    "runtime-main.js.map": "/B4B-Challenge/static/js/runtime-main.455dca95.js.map",
-    "static/js/2.a6d0f16b.chunk.js": "/B4B-Challenge/static/js/2.a6d0f16b.chunk.js",
-    "static/js/2.a6d0f16b.chunk.js.map": "/B4B-Challenge/static/js/2.a6d0f16b.chunk.js.map",
-    "static/js/3.c3d695be.chunk.js": "/B4B-Challenge/static/js/3.c3d695be.chunk.js",
-    "static/js/3.c3d695be.chunk.js.map": "/B4B-Challenge/static/js/3.c3d695be.chunk.js.map",
+    "main.css": "/B4B-Challenge/static/css/main.d4781fb1.chunk.css",
+    "main.js": "/B4B-Challenge/static/js/main.2b1c5ce4.chunk.js",
+    "main.js.map": "/B4B-Challenge/static/js/main.2b1c5ce4.chunk.js.map",
+    "runtime-main.js": "/B4B-Challenge/static/js/runtime-main.81cab588.js",
+    "runtime-main.js.map": "/B4B-Challenge/static/js/runtime-main.81cab588.js.map",
+    "static/css/2.617c3bb8.chunk.css": "/B4B-Challenge/static/css/2.617c3bb8.chunk.css",
+    "static/js/2.bf06cbe6.chunk.js": "/B4B-Challenge/static/js/2.bf06cbe6.chunk.js",
+    "static/js/2.bf06cbe6.chunk.js.map": "/B4B-Challenge/static/js/2.bf06cbe6.chunk.js.map",
+    "static/js/3.55632230.chunk.js": "/B4B-Challenge/static/js/3.55632230.chunk.js",
+    "static/js/3.55632230.chunk.js.map": "/B4B-Challenge/static/js/3.55632230.chunk.js.map",
     "index.html": "/B4B-Challenge/index.html",
-    "static/css/main.ab7136cd.chunk.css.map": "/B4B-Challenge/static/css/main.ab7136cd.chunk.css.map",
-    "static/js/2.a6d0f16b.chunk.js.LICENSE.txt": "/B4B-Challenge/static/js/2.a6d0f16b.chunk.js.LICENSE.txt",
-    "static/media/logo.103b5fa1.svg": "/B4B-Challenge/static/media/logo.103b5fa1.svg"
+    "static/css/2.617c3bb8.chunk.css.map": "/B4B-Challenge/static/css/2.617c3bb8.chunk.css.map",
+    "static/css/main.d4781fb1.chunk.css.map": "/B4B-Challenge/static/css/main.d4781fb1.chunk.css.map",
+    "static/js/2.bf06cbe6.chunk.js.LICENSE.txt": "/B4B-Challenge/static/js/2.bf06cbe6.chunk.js.LICENSE.txt",
+    "static/media/Discogs.svg.41485e20.png": "/B4B-Challenge/static/media/Discogs.svg.41485e20.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.455dca95.js",
-    "static/js/2.a6d0f16b.chunk.js",
-    "static/css/main.ab7136cd.chunk.css",
-    "static/js/main.8bdd6604.chunk.js"
+    "static/js/runtime-main.81cab588.js",
+    "static/css/2.617c3bb8.chunk.css",
+    "static/js/2.bf06cbe6.chunk.js",
+    "static/css/main.d4781fb1.chunk.css",
+    "static/js/main.2b1c5ce4.chunk.js"
   ]
 }
