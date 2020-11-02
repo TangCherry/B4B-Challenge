@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography } from "antd";
 import logo from "../../assets/images/Discogs.svg.png";
+import InputSearch from '../inputSearch/InputSearch';
 import "../../assets/styles/main.css";
 
 const { Title } = Typography;
@@ -15,6 +16,7 @@ function Header() {
           online de música más grande y completo que existen hoy en día.{" "}
         </Title>
       </div>
+      <InputSearch/>
     </>
   );
 }
