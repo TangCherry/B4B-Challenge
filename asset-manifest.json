@@ -1,26 +1,28 @@
 {
   "files": {
-    "main.css": "/B4B-Challenge/static/css/main.c2fd43a1.chunk.css",
-    "main.js": "/B4B-Challenge/static/js/main.9ff860ea.chunk.js",
-    "main.js.map": "/B4B-Challenge/static/js/main.9ff860ea.chunk.js.map",
-    "runtime-main.js": "/B4B-Challenge/static/js/runtime-main.0e3974b6.js",
-    "runtime-main.js.map": "/B4B-Challenge/static/js/runtime-main.0e3974b6.js.map",
+    "main.css": "/B4B-Challenge/static/css/main.ed9f4118.chunk.css",
+    "main.js": "/B4B-Challenge/static/js/main.e6e991d2.chunk.js",
+    "main.js.map": "/B4B-Challenge/static/js/main.e6e991d2.chunk.js.map",
+    "runtime-main.js": "/B4B-Challenge/static/js/runtime-main.b705770d.js",
+    "runtime-main.js.map": "/B4B-Challenge/static/js/runtime-main.b705770d.js.map",
     "static/css/2.617c3bb8.chunk.css": "/B4B-Challenge/static/css/2.617c3bb8.chunk.css",
-    "static/js/2.9f9bf56c.chunk.js": "/B4B-Challenge/static/js/2.9f9bf56c.chunk.js",
-    "static/js/2.9f9bf56c.chunk.js.map": "/B4B-Challenge/static/js/2.9f9bf56c.chunk.js.map",
-    "static/js/3.ac33a361.chunk.js": "/B4B-Challenge/static/js/3.ac33a361.chunk.js",
-    "static/js/3.ac33a361.chunk.js.map": "/B4B-Challenge/static/js/3.ac33a361.chunk.js.map",
+    "static/js/2.005c7919.chunk.js": "/B4B-Challenge/static/js/2.005c7919.chunk.js",
+    "static/js/2.005c7919.chunk.js.map": "/B4B-Challenge/static/js/2.005c7919.chunk.js.map",
+    "static/js/3.0342f4de.chunk.js": "/B4B-Challenge/static/js/3.0342f4de.chunk.js",
+    "static/js/3.0342f4de.chunk.js.map": "/B4B-Challenge/static/js/3.0342f4de.chunk.js.map",
     "index.html": "/B4B-Challenge/index.html",
     "static/css/2.617c3bb8.chunk.css.map": "/B4B-Challenge/static/css/2.617c3bb8.chunk.css.map",
-    "static/css/main.c2fd43a1.chunk.css.map": "/B4B-Challenge/static/css/main.c2fd43a1.chunk.css.map",
-    "static/js/2.9f9bf56c.chunk.js.LICENSE.txt": "/B4B-Challenge/static/js/2.9f9bf56c.chunk.js.LICENSE.txt",
-    "static/media/Discogs.svg.41485e20.png": "/B4B-Challenge/static/media/Discogs.svg.41485e20.png"
+    "static/css/main.ed9f4118.chunk.css.map": "/B4B-Challenge/static/css/main.ed9f4118.chunk.css.map",
+    "static/js/2.005c7919.chunk.js.LICENSE.txt": "/B4B-Challenge/static/js/2.005c7919.chunk.js.LICENSE.txt",
+    "static/media/1999.257eaad7.jpg": "/B4B-Challenge/static/media/1999.257eaad7.jpg",
+    "static/media/Discogs.svg.41485e20.png": "/B4B-Challenge/static/media/Discogs.svg.41485e20.png",
+    "static/media/spit it out.c3f59ea8.jpg": "/B4B-Challenge/static/media/spit it out.c3f59ea8.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0e3974b6.js",
+    "static/js/runtime-main.b705770d.js",
     "static/css/2.617c3bb8.chunk.css",
-    "static/js/2.9f9bf56c.chunk.js",
-    "static/css/main.c2fd43a1.chunk.css",
-    "static/js/main.9ff860ea.chunk.js"
+    "static/js/2.005c7919.chunk.js",
+    "static/css/main.ed9f4118.chunk.css",
+    "static/js/main.e6e991d2.chunk.js"
   ]
 }
