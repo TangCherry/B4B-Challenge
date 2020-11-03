@@ -2,6 +2,7 @@ import React from "react";
 import { Typography } from "antd";
 import logo from "../../assets/images/Discogs.svg.png";
 import InputSearch from '../inputSearch/InputSearch';
+import Album from '../album/Album';
 import "../../assets/styles/main.css";
 
 const { Title } = Typography;
@@ -17,6 +18,7 @@ function Header() {
         </Title>
       </div>
       <InputSearch/>
+      <Album/>
     </>
   );
 }
