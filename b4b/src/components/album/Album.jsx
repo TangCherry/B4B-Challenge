@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Row, Col, Typography } from 'antd';
+import Modal from '../modal/Modal';
 import meteora from '../../assets/images/meteora.jpg';
 import lol from '../../assets/images/1999.jpg';
 import spit from '../../assets/images/spit it out.jpg';
