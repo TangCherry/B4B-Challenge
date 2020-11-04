@@ -1,4 +1,5 @@
 import React from "react";
+import { withRouter } from 'react-router-dom';
 import { Typography } from "antd";
 import logo from "../../assets/images/Discogs.svg.png";
 import InputSearch from '../inputSearch/InputSearch';
@@ -8,6 +9,7 @@ import "../../assets/styles/main.css";
 const { Title } = Typography;
 
 function Header() {
+
   return (
     <>
       <div className="main">
@@ -23,4 +25,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default withRouter(Header);
