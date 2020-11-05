@@ -5,13 +5,14 @@ import {
   withRouter,
 } from "react-router-dom";
 import Header from "./components/header/Header";
+import Modal from './components/modal/Modal';
 import "./App.css";
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/">
+        <Route path="/" exact>
           <Header/>
         </Route>
       </Switch>

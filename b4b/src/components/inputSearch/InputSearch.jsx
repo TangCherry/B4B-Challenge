@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from "react-router-dom";
 import { Input, Typography } from 'antd';
 import '../../assets/styles/search.css';
 
@@ -21,4 +22,4 @@ function InputSearch() {
     )
 }
 
-export default InputSearch
+export default withRouter(InputSearch);

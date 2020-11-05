@@ -5,19 +5,9 @@
 
 .modal {
     background-color: black;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    margin-top: 20%;
 }
 
 .more{
     text-align: center;
     color: white;
-}
-
-.x{
-    width: 13px;
-    float: right;
-    padding-top: 23%;
-    margin-right: 5%;
 }
