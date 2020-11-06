@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router-dom";
-// import Modal from "../modal/Modal";
 import { Row, Col, Typography, Card, Button } from "antd";
 import Modal from 'react-modal';
-import x from "../../assets/images/x.svg";
 import "../../assets/styles/album.css";
 import "../../assets/styles/card.css";
 
@@ -11,6 +9,19 @@ const { Title } = Typography;
 
 function Album() {
   const [isOpen, setIsOpen] = useState(false);
+  const [discog, setDiscog] = useState([]);
+
+  let search = "Nirvana"
+  const getData = async () => {
+    fetch(`https://api.discogs.com/database/${search}?q=Nirvana&key=JtRZruQADaHwGCpIkFSL&secret=wzVmjUmKiWLJlGALuFAUuNhlTEnVHyOD`).then((data) => {
+      setDiscog(data.json())
+      console.log(discog)
+    })
+  }
+
+  useEffect(() => {
+    getData();
+  }, [])
 
   function toggleModal() {
       setIsOpen(!isOpen);
@@ -19,29 +30,29 @@ function Album() {
   return (
     <>
       <Row>
-        <Col
-          span={8}
-          style={{ paddingTop: 15, paddingRight: 15, paddingLeft: 15 }}
-        >
-          <Card
-            hoverable
-            cover={
-              <img
-                className="album"
-                alt="meteora"
-                src={
-                  "https://images-na.ssl-images-amazon.com/images/I/71-nhMkC-vL._SX522_.jpg"
-                }
-              />
-            }
-          >
-            <Title className="artist" level={4}>
-              Linkin Park
-            </Title>
-            <Button onClick={toggleModal} type="link" style={{ textAlign: 'center' }}>Ver más detalles</Button>
-          </Card>
-        </Col>
-        <Col
+        {discog.discogs.map((item) => 
+                  <Col
+                  span={8}
+                  style={{ paddingTop: 15, paddingRight: 15, paddingLeft: 15 }}
+                >
+                  <Card
+                    hoverable
+                    cover={
+                      <img
+                        className="album"
+                        alt="portada de album"
+                        src={item.portada}
+                      />
+                    }
+                  >
+                    <Title className="artist" level={4}>
+                      {item.artista}
+                    </Title>
+                    <Button onClick={toggleModal} type="link" style={{ textAlign: 'center' }}>Ver más detalles</Button>
+                  </Card>
+                </Col>
+        )}
+         <Col
           span={8}
           style={{ paddingTop: 15, paddingRight: 15, paddingLeft: 15 }}
         >
