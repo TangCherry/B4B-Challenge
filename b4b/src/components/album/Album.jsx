@@ -7,74 +7,70 @@ import "../../assets/styles/card.css";
 
 const { Title } = Typography;
 
+const fetchURL = 'https://raw.githubusercontent.com/TangCherry/B4B-Challenge/main/b4b/src/assets/data/music.json'
+const getData = () => fetch(fetchURL).then(data => data.json());
+
 function Album() {
   const [isOpen, setIsOpen] = useState(false);
-  const [discog, setDiscog] = useState([]);
+  const [music, setMusic] = useState([]);
 
-  let search = "Nirvana"
-  const getData = async () => {
-    fetch(`https://api.discogs.com/database/${search}?q=Nirvana&key=JtRZruQADaHwGCpIkFSL&secret=wzVmjUmKiWLJlGALuFAUuNhlTEnVHyOD`).then((data) => {
-      setDiscog(data.json())
-      console.log(discog)
-    })
-  }
-
-  useEffect(() => {
-    getData();
+  useEffect(() =>{
+    getData().then(data => setMusic(data));
   }, [])
+
+  // useEffect(() => {
+  //     const getData = async () => {
+  //   const data = await fetch('https://raw.githubusercontent.com/TangCherry/B4B-Challenge/main/b4b/src/assets/data/music.json')
+  //   const albums = await data.json()
+  //   // console.log(albums, 'la otra pendejada')
+  //   setMusic(albums)
+  // }
+  //   getData()
+  // }, [])
+  // console.log(music, 'chingadera')
+
+  // useEffect(() => {
+  //     const getData = async () => {
+  //   const data = await fetch('https://jsonplaceholder.typicode.com/users')
+  //   const albums = await data.json()
+  //   // console.log(albums)
+  //   setMusic(albums)
+  // }
+  // getData()
+  // }, [])
 
   function toggleModal() {
       setIsOpen(!isOpen);
   }
-
   return (
     <>
       <Row>
-        {discog.discogs.map((item) => 
-                  <Col
-                  span={8}
-                  style={{ paddingTop: 15, paddingRight: 15, paddingLeft: 15 }}
-                >
-                  <Card
-                    hoverable
-                    cover={
-                      <img
-                        className="album"
-                        alt="portada de album"
-                        src={item.portada}
-                      />
-                    }
-                  >
-                    <Title className="artist" level={4}>
-                      {item.artista}
-                    </Title>
-                    <Button onClick={toggleModal} type="link" style={{ textAlign: 'center' }}>Ver más detalles</Button>
-                  </Card>
-                </Col>
-        )}
-         <Col
+        {console.log(music, 'cosa del mal')}
+        {music 
+        ? music.map(item => {
+          <Col
           span={8}
           style={{ paddingTop: 15, paddingRight: 15, paddingLeft: 15 }}
         >
           <Card
+          key={item.id}
             hoverable
             cover={
               <img
                 className="album"
-                alt="meteora"
-                src={
-                  "https://www.elquintobeatle.com/wp-content/uploads/2016/03/love-of-lesbian-1999-o-como-generar-incendios-de-nieve-con-una-lupa-enfocada-a-la-luna-1.jpg"
-                }
+                alt="portada de album"
+                src={item.portada}
               />
             }
           >
             <Title className="artist" level={4}>
-              Love of Lesbian
+              {item.artista}
             </Title>
-            <Button type="link" style={{ textAlign: 'center' }}>Ver más detalles</Button>
+            <Button onClick={toggleModal} type="link" style={{ textAlign: 'center' }}>Ver más detalles</Button>
           </Card>
         </Col>
-
+        })
+      : <p>Cargando...</p>}
             <Modal
             isOpen={isOpen}
             onRequestClose={toggleModal}
@@ -104,29 +100,6 @@ function Album() {
           </div>
             <Button onClick={toggleModal} className="close" type="link" style={{ textAlign: 'center', color: 'red' }}>Cerrar</Button>
             </Modal>
-
-        <Col
-          span={8}
-          style={{ paddingTop: 15, paddingRight: 15, paddingLeft: 15 }}
-        >
-          <Card
-            hoverable
-            cover={
-              <img
-                className="album"
-                alt="meteora"
-                src={
-                  "https://upload.wikimedia.org/wikipedia/en/0/09/Solar_-_Spit_it_Out.jpg"
-                }
-              />
-            }
-          >
-            <Title className="artist" level={4}>
-              Solar
-            </Title>
-            <Button type="link" style={{ textAlign: 'center' }}>Ver más detalles</Button>
-          </Card>
-        </Col>
       </Row>
     </>
   );
