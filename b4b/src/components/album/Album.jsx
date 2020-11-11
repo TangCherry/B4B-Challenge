@@ -45,7 +45,7 @@ function Album() {
   return (
     <>
       <Row>
-        {console.log(music, 'cosa del mal')}
+        {console.log(music[0], 'cosa del mal')}
         {music 
         ? music.map(item => {
           <Col
